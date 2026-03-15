@@ -1,0 +1,29 @@
+Running Gradle task 'assembleDebug'...                          
+lib/features/settings/presentation/screens/settings_screen.dart:126:23: Error: The getter 'userAsync' isn't defined for the type '_SettingsScreenState'.
+ - '_SettingsScreenState' is from 'package:argus_eye_app/features/settings/presentation/screens/settings_screen.dart' ('lib/features/settings/presentation/screens/settings_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'userAsync'.
+                      userAsync.value?.name ?? 'User',
+                      ^^^^^^^^^
+lib/features/settings/presentation/screens/settings_screen.dart:135:23: Error: The getter 'userAsync' isn't defined for the type '_SettingsScreenState'.
+ - '_SettingsScreenState' is from 'package:argus_eye_app/features/settings/presentation/screens/settings_screen.dart' ('lib/features/settings/presentation/screens/settings_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'userAsync'.
+                      userAsync.value?.phoneNumber ?? '',
+                      ^^^^^^^^^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command '/home/vaibhav/flutter/bin/flutter'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2s
+Running Gradle task 'assembleDebug'...                           2,347ms
+Gradle task assembleDebug failed with exit code 1

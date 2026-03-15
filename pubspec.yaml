@@ -1,0 +1,51 @@
+name: argus_eye_app
+description: Argus Eye - AI-Powered Real-Time Fraud Intelligence for Indian UPI Payments
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  go_router: ^13.0.0
+  dio: ^5.4.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  cupertino_icons: ^1.0.6
+  connectivity_plus: ^5.0.2
+  shimmer: ^3.0.0
+  flutter_dotenv: ^5.1.0
+  google_generative_ai: ^0.4.0
+  mobile_scanner: ^5.0.0
+  url_launcher: ^6.2.0
+  local_auth: ^2.1.8
+  flutter_contacts: ^2.0.0
+  permission_handler: ^11.1.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^13.0.2
+  shared_preferences: ^2.3.4
+  geocoding: ^3.0.0
+  fast_contacts: ^5.0.1
+  http: ^1.2.0
+  appwrite: ^12.0.0
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+dependency_overrides:
+  flutter_web_auth_2: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
