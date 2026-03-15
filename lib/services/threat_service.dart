@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:math';
 import 'package:appwrite/appwrite.dart';
 import 'package:crypto/crypto.dart';
 import '../core/config/app_config.dart';

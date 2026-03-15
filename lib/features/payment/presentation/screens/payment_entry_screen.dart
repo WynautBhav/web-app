@@ -151,7 +151,8 @@ class _PaymentEntryScreenState extends ConsumerState<PaymentEntryScreen> {
         );
 
         if (!mounted) return;
-        if (riskScore.score >= 40) {
+        if (riskScore.score >= 60) {
+          setState(() => _isLoading = false);
           context.push('/payment-risk', extra: {
             'riskScore': riskScore,
             'paymentData': {
@@ -161,6 +162,7 @@ class _PaymentEntryScreenState extends ConsumerState<PaymentEntryScreen> {
             },
           });
         } else {
+          setState(() => _isLoading = false);
           context.push('/payment-safe', extra: {
             'upiId': upiId,
             'name': recipientName,
